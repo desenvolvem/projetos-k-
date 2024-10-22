@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shampoo Maravilhoso</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #f0f0f0, #c0c0c0); /* Ajuste as cores do gradiente */
+            text-align: center;
+        }
+        img {
+            width: 200px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shampoo Maravilhoso</h1>
+    <img id="shampooImage" src="frente_shampoo.jpg" alt="Frente do Shampoo">
+    <button onclick="trocarImagem()">Ver Verso</button>
+    <script>
+        function trocarImagem() {
+            var imagem = document.getElementById("shampooImage");
+            if (imagem.src.includes("frente")) {
+                imagem.src = "verso_shampoo.jpg";
+            } else {
+                imagem.src = "frente_shampoo.jpg";
+            }
+        }
+    </script>
+</body>
+</html>
